@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans"/*Obrigatório para chamar a o link da fonte no index*/
+}
+
+html, body{
+    height: 100%;
+}
+
+.center{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.header{
+    width: 100%;
+    /*height: 60px;*/
+    background-color: #212343;
+}
+
+.header img{
+    margin: 1%;
+    margin-left: 3%;
+    /*padding: 1% calc(50% - 72.5px);*/
+}
+
+.container-banner{
+    width: 100%;
+    height: 83%;
+    padding: 0 2%;
+    background-image: url('../images/header_bg.png');
+    background-size: cover;/* deixar responsivo*/
+    background-position: center;/* deixar responsivo*/
+}
+
+/*
+.container-banner > .center{
+    height: 100%;
+}
+*/
+.form{
+    padding: 2vh;
+    width: 30vw;
+    height: 100%; /* calc(100% + 3px); calcula o centro de um objeto dentro ou fora da div*/
+    position: relative;/* centraliza um objeto dentro ou fora da div*/
+    top: -15px;/* centraliza um objeto dentro ou fora da div*/
+    border: #ccc solid 8px;
+    background-color: white;
+    float: right;
+    /*margin-right: 30px;*/
+}
+
+.form h2{
+    font-weight: normal;
+    font-size: 21px;
+    color: #999;
+}
+
+/*.input-container{
+    margin-top: 20px;
+}*/
+
+.input-container span{
+    width: 100%;
+    display: inline-block;
+    font-size: 15px;
+    color: #999;
+    margin: 8.2% 0;
+    margin-bottom: 8px;
+}
+
+.input-container input[type=text], [type=email], [type=tel]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+}
+
+.input-container p{
+    margin-top: 25px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.input-container input[type="submit"]{
+    margin-top: 25px;
+    background-color: #212343;
+    font-size: 20px;
+    border-radius: 10px;
+    /*border: solid #212343;(cor da borda ou "border:0")*/
+    width: 280px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.input-submit-container{
+    text-align: center;
+}
+
+.input-container input[type="submit"]:focus{
+    background-color: black;
+}
+
+.input-container input[value=Enviar]{
+    color: #ccc;
+}
+
+.container-list{
+    margin: 7% 0;
+    width: 60vw;
+    float: left;
+    background-color: rgba(33, 32, 67, 0.7);
+    
+}
+.container-list li{
+    margin: 6%;
+    color: white;
+}
+
+.container-text-center{
+    /*font-weight: normal; (não entendi o sentido)*/
+    background-color: #bbb;
+    padding: 10vh; /*Preenchimento de largura*/
+    text-align: center; /*Aqui todos conteúdo fica centralizado*/
+}
+
+.container-text-center h2{
+    margin-top: 7vh;
+    text-align: center;/*Aqui o texto do h2 está centralizado*/
+}
+.container-text-center p{
+    width: 100%; /*Define a largura do texto*/
+    padding: 0 auto;
+    text-align: justify;/*Aqui o texto do paragrado esta justificado*/
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.arrow img{
+    width: 5vw;/*Defini a largura da imagem*/
+    /*height: 40px; Defini a altura da imagem em pixel*/
+    /*background-size: 100% 100%;Apliquei que ocupasse 100% da altura x largura*/
+    position: relative;
+    margin-top: -25px; /*Recuei o objeto para invadir outro elemento*/
+    left: 50%;/*Coloquei o objeto para mover 50% da tela*/
+    margin-left: -25px;/*Recuei para centralizar*/
+}
+
+.section-1{
+    padding: 90px 0;
+}
+
+.section-1 h2{/*Está atacando todos os (h2) dentro da (div), cuidado para não estilizar outros elementos h2 dentro de outras divs abaixo*/
+    color: #212343;
+    text-align: center;
+    font-weight: normal;
+}
+
+.section-icons{
+    padding: 90px 0;
+    text-align: center;
+    float: left;
+    width: 33.333%;
+}
+
+.section-icons img{
+    width: 5vw;
+    /*height: 50px;*/
+}
+
+.text-container-sigle p{
+    padding: 5vw;
+    text-align: center;
+}
+
+.footer{
+    padding: 20px 0;
+    border-top: 2px solid  #ccc;
+    clear: both;
+}
+
+.footer p{
+    text-align: center;
+    color: #ccc;
+    font-size: 14px;
+}
+
+/*media querys*/
+
+@media screen and (max-width: 980px) {
+
+    .header img{
+        padding: 0 calc(50% - 100px);
+    }
+
+    .container-banner{
+        width: 100%;
+        /*height: 500px;*/
+        padding: 0 10vw;
+    }
+
+    .container-list{
+        width: 100%;
+        margin: 10% 0;
+        padding: 0 7%;
+        text-align: justify;
+    }
+
+    .form{
+        width: 100%;
+        margin: 0;
+        /*margin-top: 5vh;*/
+    }
+
+    .form h2{
+        text-align: center;
+    }
+    
+    .input-container span{
+        width: 100%;
+        display: inline-block;
+        font-size: 15px;
+        color: #999;
+        margin: 5% 0;
+        margin-bottom: 8px;    
+    }
+
+    .container-text-center h2{
+        display: inline-block;
+        margin-top: 10vh;
+        text-align: center;/*Aqui o texto do h2 está centralizado*/
+    }
+
+    .container-text-center p{
+        padding: 0 5vw;
+    }
+   
+    .section-icons{
+        width: 100%;
+        padding: 10%;
+    }
+
+    .text-container-sigle p{
+        text-align: justify;
+    }
+    /*.section-icons img{
+        width: 100%;
+        /*height: 50px;
+    }*/
+}

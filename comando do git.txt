@@ -10,5 +10,6 @@
 # git commit -m "Descrição dos projetos" (prepara os arquivos para subir para o github)
 # git push origin main (envia todos os commit do git para o github)
 # git config -- list
-# git remote add origin endereço do repositório na nuvem do github (linka o repositório local ao remoto)
+# git remote add origin "endereço do repositório na nuvem do github" obs: sem aspas (linka o repositório local ao remoto)
 # git remote -v (mostra as lista de repositórios cadastrados)
+# git push origin master (empurra os arquivo para o github)
