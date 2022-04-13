@@ -1,0 +1,7 @@
+# Comando do git
+
+# git init (cria um repositorio na pasta que vc escolher)
+# git config --global user.email "seu@email.com" (insere seu email nas configurações do git)
+# git config --global user.name Seu nome ou apelido (insere seu nome ou apelido nas configurações do git)
+# git commit -m "Descrição dos projetos" (prepara os arquivos para subir para o github)
+# git push origin main (envia todos os commit do git para o github)
